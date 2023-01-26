@@ -34,7 +34,7 @@ export default function Products() {
           },
         ].map((val) => {
           return (
-            <Card className="w-96">
+            <Card key={val.title} className="w-96">
               <CardHeader color="blue" className="relative h-56">
                 <img
                   src={val.imgSrc}

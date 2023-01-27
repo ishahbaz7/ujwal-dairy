@@ -5,7 +5,7 @@ import { Button, Typography } from "@material-tailwind/react";
 import Link from "next/link";
 
 function Carousel() {
-  const baseClasses = "relative bg-cover sm:h-[594px] h-[635px]";
+  const baseClasses = "relative bg-cover sm:h-[594px] h-[350px]";
   const viewProduct = (
     <Link href={"/products"}>
       <Button color="orange" className="mt-5">
@@ -25,14 +25,20 @@ function Carousel() {
       >
         <SwiperSlide>
           <div
-            className={`${baseClasses} bg-[90%_0] bg-[url('/assets/images/carousel/milk-slide.png')]`}
+            className={`${baseClasses} bg-[100%_0] bg-[url('/assets/images/carousel/milk-slide.png')]`}
           >
             {" "}
-            <div className="flex flex-col justify-center text-[#3D3C42] items-center h-full">
-              <Typography variant={"h2"} className=" text-center text-7xl ">
+            <div className="flex flex-col justify-center  items-center h-full">
+              <Typography
+                variant={"h2"}
+                className="text-center bg-yellow-500/20 p-5 rounded-lg md:text-7xl text-4xl "
+              >
                 Fresh Milk and More!
               </Typography>
-              <Typography variant={"h3"} className="text-green-700  text-4xl ">
+              <Typography
+                variant={"h3"}
+                className="bg-yellow-500/20 p-5 rounded-lg  md:text-4xl text-2xl "
+              >
                 Good source of protein
               </Typography>
               {viewProduct}
@@ -44,8 +50,11 @@ function Carousel() {
             className={`${baseClasses} bg-[90%_0] bg-[url('/assets/images/carousel/curd-slide.png')]`}
           >
             {" "}
-            <div className="flex flex-col justify-center text-[#3D3C42] shadow-2xl items-center h-full">
-              <Typography variant={"h2"} className="text-center  text-7xl ">
+            <div className="flex flex-col justify-center shadow-2xl items-center h-full">
+              <Typography
+                variant={"h2"}
+                className="text-center bg-yellow-500/20 p-5  md:text-7xl text-4xl "
+              >
                 Fresh Curd
               </Typography>
 
@@ -55,13 +64,16 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`${baseClasses} bg-[70%_0] text-[#3D3C42] bg-[url('/assets/images/carousel/cheese-slide.png')]`}
+            className={`${baseClasses} bg-[70%_0] bg-[url('/assets/images/carousel/cheese-slide.png')]`}
           >
             <div className="flex flex-col justify-center   items-center h-full">
-              <Typography variant={"h2"} className="text-center  text-7xl ">
+              <Typography
+                variant={"h2"}
+                className="text-center bg-yellow-500/20 p-5  md:text-7xl text-4xl "
+              >
                 Creamy cheese
               </Typography>
-              <Typography variant={"h3"} className="  text-4xl ">
+              <Typography variant={"h3"} className=" md:text-3xl text-3xl">
                 Fresh! Order now
               </Typography>
               {viewProduct}

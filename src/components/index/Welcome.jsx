@@ -1,10 +1,9 @@
-import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 
 function Welcome() {
   return (
     <div className="bg-[#fcb900] pt-10 pb-20 relative">
-      <article className="prose text-center mx-auto lg:prose-xl">
+      <article className="prose container mx-auto text-center lg:prose-xl">
         <h2>Welcome To Ujwal Dairy</h2>
         <p>
           We hold our products to the highest standards of quality. We use

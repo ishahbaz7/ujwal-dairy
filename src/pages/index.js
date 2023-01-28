@@ -1,3 +1,4 @@
+import About from "@/components/index/About";
 import Carousel from "@/components/index/Carousel";
 import Products from "@/components/index/Products";
 import Welcome from "@/components/index/Welcome";
@@ -15,6 +16,7 @@ export default function Home() {
       <Carousel />
       <Welcome />
       <Products />
+      <About />
     </>
   );
 }

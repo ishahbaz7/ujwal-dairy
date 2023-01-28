@@ -89,7 +89,7 @@ function Carousel() {
                 variant={"h2"}
                 className="md:text-5xl text-3xl bg-yellow-500/20 p-3"
               >
-                Ujwal Dairy's <br /> special Mithai
+                Ujwal Dairy&apos;s <br /> special Mithai
               </Typography>
               <Typography
                 variant={"h3"}

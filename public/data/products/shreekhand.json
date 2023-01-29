@@ -1,0 +1,10 @@
+{
+    "title": "Shreekhand",
+    "slogan": "Shreekhand",
+    "description": ["Shrikhand is a semi-soft sweetish – sour whole milk product prepared from lactic fermented curd. The curd (dahi) is partially strained through a cloth to remove the whey and thus produce a solid mass called chakka (the basic ingredient for shrikhand). This chakka is mixed with the required amount of sugar, cardamom, nutmeg (jaiphal) etc. to yield shrikhand."],
+    "shelfLife": "30 days from manufacturing when stored below -18 0C",
+    "nutations": "Nutritional Value (Per 100 gm provides approx.): Energy285.42 kcal, Carbohydrate51.48 g, Added Sugar42.50 g, Fat (On Dry Basis)8.5 g, Protein (On Dry Basis)9.00 g",
+    "qty": "250 gm , 500 gm",
+    "imgSrc": ["/assets/images/products/shree-khand.png"]
+
+}

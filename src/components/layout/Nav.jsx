@@ -32,13 +32,16 @@ export default function Nav() {
         { name: "Home", link: "/" },
         { name: "Products", link: "/products" },
         { name: "About Us", link: "/about-us" },
-        { name: "Contact Us", link: "/contact-us", hidden: "hidden" },
+        { name: "Contact Us", link: "/contact-us", hidden: "" },
       ].map((val) => {
         return (
           <li key={val.name}>
             <Link href={val.link}>
               <Button
-                className={"text-blue-gray-700" + val.hidden}
+                color={"orange"}
+                className={
+                  pathname.toLowerCase() == val.link ? "" : "text-blue-gray-400"
+                }
                 variant="text"
               >
                 {val.name}
@@ -58,23 +61,18 @@ export default function Nav() {
       </Drawer>
       <Navbar fullWidth className="mx-auto py-2 px-4 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-          <Typography
-            variant=""
-            className="mr-4 cursor-pointer py-1.5 font-bold"
-          >
+          <Typography className="mr-4 cursor-pointer py-1.5 font-bold">
             <Link className="gap-2 flex items-center" href={"/"}>
               <img className="w-12 inline-block" src="/logo.png" />
               <span>Ujwal Dairy</span>
             </Link>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          <Button
-            variant="gradient"
-            color="orange"
-            className="hidden lg:inline-block"
-          >
-            <span>Contact us</span>
-          </Button>
+          <a href="tel:02585246730">
+            <Button variant="gradient" size="sm" color="orange" className="">
+              Call Now
+            </Button>
+          </a>
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

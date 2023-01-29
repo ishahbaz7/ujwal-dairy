@@ -84,7 +84,7 @@ function Carousel() {
           <div
             className={`${baseClasses} bg-[70%_0] bg-[url('/assets/images/carousel/mithai-slide.png')]`}
           >
-            <div className="flex flex-col justify-center container mx-auto  items-start h-full">
+            <div className="flex flex-col justify-center container mx-auto items-center lg:items-start h-full">
               <Typography
                 variant={"h2"}
                 className="md:text-5xl text-3xl bg-yellow-500/20 p-3"
@@ -93,7 +93,7 @@ function Carousel() {
               </Typography>
               <Typography
                 variant={"h3"}
-                className=" md:text-3xl text-2xl bg-yellow-500/20 p-3 "
+                className=" md:text-3xl text-2xl text-center lg:text-left bg-yellow-500/20 p-3 "
               >
                 Mithai is the sweetest way <br /> to express love
               </Typography>

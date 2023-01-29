@@ -17,15 +17,15 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
           (isOpen ? " -translate-x-0 " : " -translate-x-full ")
         }
       >
-        <article className="relative px-2 w-screen max-w-[80vw] pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
-          <Typography className="p-4 flex justify-between font-semibold">
+        <div className="relative px-2 w-screen max-w-[80vw] pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
+          <div className="p-4 flex justify-between font-semibold">
             <h2 className="self-center">Ujwal Dairy</h2>
             <div className="w-12">
               <img className="w-full" src="/logo.png" />
             </div>
-          </Typography>
+          </div>
           {children}
-        </article>
+        </div>
       </section>
       <section
         className=" w-screen h-full cursor-pointer "

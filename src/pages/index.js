@@ -1,10 +1,13 @@
+import ContactForm from "@/components/contactUs/ContactForm";
+import AddressMap from "@/components/contactUs/AddressMap";
 import About from "@/components/index/About";
 import Carousel from "@/components/index/Carousel";
-import Products from "@/components/index/Products";
+import Products from "@/components/products/Products";
 import Welcome from "@/components/index/Welcome";
 import Head from "next/head";
+import { Button } from "@material-tailwind/react";
 
-export default function Home() {
+export default function Home({ productsData }) {
   return (
     <>
       <Head>
@@ -15,8 +18,16 @@ export default function Home() {
       </Head>
       <Carousel />
       <Welcome />
-      <Products />
+      <Products take={6} products={productsData.products} />
       <About />
+      <ContactForm />
+      <AddressMap />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const date = await fetch("http://localhost:3000/data/products.json");
+  var productsData = await date.json();
+  return { props: { productsData } };
 }

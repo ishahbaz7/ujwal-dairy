@@ -1,0 +1,10 @@
+{
+    "title": "Paneer",
+    "slogan": "Paneer",
+    "description": ["Paneer refers to the milk solids obtained by the acid coagulation of boiled whole milk & subsequent drainage of whey. The acid commonly used are citric in both natural & chemical forms."],
+    "shelfLife": "30 days from manufacturing when stored below 00 C",
+    "nutations": "Nutritional Value (Per 100 gm provides approx.) :Energy357.8 kcal , Carbohydrate6.15 g, Fat (On D.B.)50.00 g, Protein20.12 g",
+    "qty": "1 Kg Packet, 200 gm Packet, 500 gm Packet",
+    "imgSrc": ["/assets/images/products/paneer.png", "/assets/images/products/malai-paneer.png"]
+
+}

@@ -1,14 +1,18 @@
-import { Card, CardBody, Typography } from "@material-tailwind/react";
+import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
+import { useRouter } from "next/router";
 import React from "react";
 
 function About() {
+  const router = useRouter();
   return (
-    <article className="container mx-auto">
-      <Card className="bg-[#fff3d3] text-black grid grid-cols-1 lg:grid-cols-2 ">
-        <CardBody>
-          <div className="">
+    <Card>
+      <article className="container text-center lg:text-start text-black grid grid-cols-1 lg:grid-cols-3">
+        <CardBody className="col-span-2 ">
+          <div>
             <div className="space-y-4">
-              <Typography variant="h2">About Ujwal Dairy</Typography>{" "}
+              <Typography className="text-2xl" variant="h2">
+                About Ujwal Dairy
+              </Typography>{" "}
               <Typography>
                 Established in 2001, Ujwal Dairy is a favourite among
                 Khandeshkar for its delectable taste and quality. The Dairy was
@@ -27,13 +31,26 @@ function About() {
                 the supreme goodness of dairy delights.
               </Typography>
             </div>
+            <div
+              onClick={() => router.push("/about-us")}
+              className="flex justify-center"
+            >
+              {" "}
+              <Button size="lg" variant="text" className="mt-5" color="orange">
+                Know more
+              </Button>
+            </div>
           </div>
         </CardBody>
-        <div className="lg:block hidden">
-          <img className="w-full" src="/assets/images/cow.jpg" alt="" />
+        <div className="">
+          <img
+            className="w-full"
+            src="/assets/images/about-banner.jpg"
+            alt=""
+          />
         </div>
-      </Card>
-    </article>
+      </article>
+    </Card>
   );
 }
 

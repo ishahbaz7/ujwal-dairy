@@ -7,7 +7,7 @@ function products({ productsData }) {
 export default products;
 
 export async function getStaticProps() {
-  const date = await fetch("http://localhost:3000/data/products.json");
+  const date = await fetch("https://ujwal-api.vercel.app//data/products.json");
   var productsData = await date.json();
   return { props: { productsData } };
 }

@@ -78,7 +78,7 @@ export default Product;
 export const getStaticPaths = async () => {
   return {
     paths: paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
@@ -93,3 +93,7 @@ export async function getStaticProps(context) {
     props: { product },
   };
 }
+
+Product.defaultProps = {
+  product: null,
+};

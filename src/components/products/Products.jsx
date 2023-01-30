@@ -16,7 +16,7 @@ export default function Products({ products, take }) {
         Our Products
       </Typography>
       <div className="flex mt-20 gap-9  flex-wrap justify-center ">
-        {products.map((val, index) => {
+        {products?.map((val, index) => {
           if (index >= take) {
             return;
           }

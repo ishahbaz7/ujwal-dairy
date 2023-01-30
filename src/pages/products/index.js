@@ -1,13 +1,17 @@
 import Products from "@/components/products/Products";
 
-function products({ productsData }) {
-  return <Products products={productsData.products} />;
+function Index({ productsData }) {
+  return <Products products={productsData?.products} />;
 }
 
-export default products;
+export default Index;
 
-export async function getStaticProps() {
-  const date = await fetch("https://ujwal-api.vercel.app//data/products.json");
+export async function getServerSideProps() {
+  const date = await fetch("https://ujwal-api.vercel.app/data/products.json");
   var productsData = await date.json();
   return { props: { productsData } };
 }
+
+Index.defaultProps = {
+  productsData: null,
+};

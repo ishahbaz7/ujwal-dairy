@@ -118,6 +118,5 @@ const data = {
 
 export default function handler(req, res) {
   const { productName } = req.query;
-  console.log("productName", productName);
   res.status(200).json(data[productName] || "Not found");
 }

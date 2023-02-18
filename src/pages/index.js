@@ -5,7 +5,6 @@ import Carousel from "@/components/index/Carousel";
 import Products from "@/components/products/Products";
 import Welcome from "@/components/index/Welcome";
 import Head from "next/head";
-import { Button } from "@material-tailwind/react";
 
 export default function Home({ productsData }) {
   return (
@@ -27,7 +26,7 @@ export default function Home({ productsData }) {
 }
 
 export async function getStaticProps() {
-  const date = await fetch("https://ujwal-api.vercel.app/data/products.json");
+  const date = await fetch(`${process.env.API_URL}/api/products`);
   var productsData = await date.json();
   return { props: { productsData } };
 }

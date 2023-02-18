@@ -85,10 +85,11 @@ export const getStaticPaths = async () => {
 export async function getStaticProps(context) {
   const { params } = context;
   const res = await fetch(
-    `https://ujwal-api.vercel.app/data/products/${params.productName}.json`
+    `${process.env.API_URL}/api/products/${params.productName}`
   );
   console.log(res);
   const product = await res.json();
+  console.log(product);
   return {
     props: { product },
   };

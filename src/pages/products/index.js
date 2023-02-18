@@ -6,9 +6,10 @@ function Index({ productsData }) {
 
 export default Index;
 
-export async function getServerSideProps() {
-  const date = await fetch("https://ujwal-api.vercel.app/data/products.json");
-  var productsData = await date.json();
+export async function getStaticProps() {
+  const data = await fetch(`${process.env.API_URL}/api/products`);
+  var productsData = await data.json();
+  console.log(process.env.API_URL);
   return { props: { productsData } };
 }
 

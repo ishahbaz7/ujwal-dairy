@@ -5,17 +5,18 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function Products({ products, take }) {
   const router = useRouter();
 
   return (
-    <div className="container mt-10">
+    <div className="container mb-16">
       <Typography className="text-center text-2xl" variant="h1">
         Our Products
       </Typography>
-      <div className="flex mt-20 gap-9  flex-wrap justify-center ">
+      <div className="flex mt-16 gap-9  flex-wrap justify-center ">
         {products?.map((val, index) => {
           if (index >= take) {
             return;
@@ -27,13 +28,14 @@ export default function Products({ products, take }) {
             >
               <CardHeader
                 onClick={() => router.push(`/products/${val.link}`)}
-                color="blue"
-                className="relative h-56 cursor-pointer"
+                color="orange"
+                className="relative hover:scale-110 transition-all  cursor-pointer"
               >
-                <img
+                <Image
                   src={val.imgSrc}
-                  alt="img-blur-shadow"
-                  className="h-full w-full"
+                  alt="Product Image"
+                  width={352}
+                  height={224}
                 />
               </CardHeader>
               <CardBody className="text-center ">
@@ -60,7 +62,7 @@ export default function Products({ products, take }) {
       {take && (
         <div
           onClick={() => router.push("/products")}
-          className="flex -mt-12 mb-20 justify-center"
+          className="flex -mt-8  justify-center"
         >
           <Button color="orange">View all products</Button>
         </div>

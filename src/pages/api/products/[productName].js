@@ -9,7 +9,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 ml provides approx.): Energy 896.96 kcal, Carbohydrate 0.00 g, Fat 99.70 g, Protein 0.00 g",
     qty: "1000 ml, 500 ml",
-    imgSrc: ["/assets/images/products/ghee.png"],
+    imgSrc: ["/assets/images/products/buffalo_ghee.jpg"],
   },
   "buttor-milk": {
     title: "Tak / Chas",
@@ -21,7 +21,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 ml provides approx.) : Energy 46.40 kcal, Carbohydrate7.12 g, Sugar0 g, Fat1.00 g, Protein1.77 g",
     qty: "1000 ml Bottle, 500 ml Bottle, 500 ml Poly Bag",
-    imgSrc: ["/assets/images/products/buttor-milk.png"],
+    imgSrc: ["/assets/images/products/butter_milk.jpg"],
   },
   dahi: {
     title: "Curd (Dahi)",
@@ -33,7 +33,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 gm provides approx.): Energy62.00 kcal, Carbohydrate4.5 g, Fat3.1 g, Protein3.8 g",
     qty: "100 gm 20 Cups (2 Kg Box), 100 gm Cup, 1000 gm Packing (1 Kg), 200 gm 10 Cups (2 Kg Box), 200 gm Cup, 400 gm 6 Cups (2.4 Kg Box), 400 gm Cup, 500 gm Packing",
-    imgSrc: ["/assets/images/products/dahi.png"],
+    imgSrc: ["/assets/images/products/dahi.jpg"],
   },
   kalakand: {
     title: "Kalakand",
@@ -46,7 +46,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 gms provides approx.): Energy 428.0 kcal, Carbohydrates58.07 g, Added Sugar17.75 g, Fat %16.19 g, Protein12.57 g",
     qty: "500 gm box , 250 gm Box",
-    imgSrc: ["/assets/images/products/kalakand.png"],
+    imgSrc: ["/assets/images/products/kalakand.jpg"],
   },
   khawa: {
     title: "Khawa / Mawa",
@@ -59,7 +59,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 gm provides approx.): Energy295 kcal, Fat basis17.1 g, Protein15.5 g, Carbohydrate19.89 g, Added Sugar 0.00",
     qty: "200 gm Packet, 500 gm Packet",
-    imgSrc: ["/assets/images/products/khawa.png"],
+    imgSrc: ["/assets/images/products/khawa.jpg"],
   },
   milk: {
     title: "Buffalo Milk",
@@ -72,7 +72,7 @@ const data = {
     nutations:
       "A glass of milk in the morning and night gives your body the power to fight! Cow’s milk is rich in proteins, calcium, and vitamins. Milk plays a crucial role in our lives, right from birth. At UJWAL DAIRY Milk, we bring you pure, unadulterated, and chemical-free cow’s milk, fresh from the farm. It helps strengthen your bones, lowers blood pressure, and energizes you every morning. Wake up to freshness with UJWAL DAIRY MILK.",
     qty: "Energy 91 Kcal, Fat 7.P g, Calcium120 mg, Protein3.2 g, Total Carbohydrates4.9 g, Added Sugar0 g",
-    imgSrc: ["/assets/images/products/milk.png"],
+    imgSrc: ["/assets/images/products/milk.jpg"],
   },
   paneer: {
     title: "Paneer",
@@ -85,8 +85,8 @@ const data = {
       "Nutritional Value (Per 100 gm provides approx.) :Energy357.8 kcal , Carbohydrate6.15 g, Fat (On D.B.)50.00 g, Protein20.12 g",
     qty: "1 Kg Packet, 200 gm Packet, 500 gm Packet",
     imgSrc: [
-      "/assets/images/products/malai-paneer.png",
-      "/assets/images/products/paneer.png",
+      "/assets/images/products/paneer.jpg",
+      "/assets/images/products/paneer_2.jpg",
     ],
   },
   pedha: {
@@ -100,7 +100,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 gm provides approx.) :Energy441.90 kcal, Carbohydrate47.58 g, Sugar23.00 g, Fat21.82 g, Protein13.80 g",
     qty: "250gm Box, 500gm Box",
-    imgSrc: ["/assets/images/products/pedha.png"],
+    imgSrc: ["/assets/images/products/pedha.jpg"],
   },
   shreekhand: {
     title: "Shreekhand",
@@ -112,7 +112,7 @@ const data = {
     nutations:
       "Nutritional Value (Per 100 gm provides approx.): Energy285.42 kcal, Carbohydrate51.48 g, Added Sugar42.50 g, Fat (On Dry Basis)8.5 g, Protein (On Dry Basis)9.00 g",
     qty: "250 gm , 500 gm",
-    imgSrc: ["/assets/images/products/shree-khand.png"],
+    imgSrc: ["/assets/images/products/shreekhand.jpg"],
   },
 };
 

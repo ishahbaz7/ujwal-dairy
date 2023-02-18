@@ -5,3 +5,23 @@
 .container {
     @apply w-[98%]
 }
+
+.paneer-bg {
+    @apply bg-[url('/assets/images/carousel/paneer_slide.jpg')];
+    background-position: 100% 0;
+}
+
+.milk-bg {
+    @apply bg-[url('/assets/images/carousel/milk.jpg')];
+    background-position: 95% 0;
+}
+
+.dahi-bg {
+    @apply bg-[url('/assets/images/carousel/dahi.jpg')];
+    background-position: 90% 0;
+}
+
+.mithai-bg {
+    @apply bg-[url('/assets/images/carousel/pedha.jpg')];
+    background-position: 70% 0;
+}

@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import React from "react";
 
 function AboutTop() {
@@ -57,11 +58,12 @@ function AboutTop() {
             </div>
           </div>
         </div>
-        <div className="mt-10">
-          <img
-            className="w-full"
+        <div className="my-auto">
+          <Image
+            width={408}
+            height={425}
             src="/assets/images/about-banner.jpg"
-            alt="cow image"
+            alt="About us image"
           />
         </div>
       </div>

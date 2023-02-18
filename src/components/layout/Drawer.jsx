@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import React from "react";
 
 export default function Drawer({ children, isOpen, setIsOpen }) {
@@ -21,7 +21,13 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
           <div className="p-4 flex justify-between font-semibold">
             <h2 className="self-center">Ujwal Dairy</h2>
             <div className="w-12">
-              <img className="w-full" src="/logo.png" />
+              <Image
+                alt="Ujwal Dairy's logo"
+                width={100}
+                height={100}
+                className="w-full"
+                src="/logo.png"
+              />
             </div>
           </div>
           {children}

@@ -1,4 +1,5 @@
 import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -43,10 +44,11 @@ function About() {
           </div>
         </CardBody>
         <div className="">
-          <img
-            className="w-full"
+          <Image
+            width={408}
+            height={425}
             src="/assets/images/about-banner.jpg"
-            alt=""
+            alt="About us image"
           />
         </div>
       </article>

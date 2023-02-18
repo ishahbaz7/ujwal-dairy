@@ -1,7 +1,11 @@
 import Products from "@/components/products/Products";
 
 function Index({ productsData }) {
-  return <Products products={productsData?.products} />;
+  return (
+    <div className="mt-10">
+      <Products products={productsData?.products} />
+    </div>
+  );
 }
 
 export default Index;

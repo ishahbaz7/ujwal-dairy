@@ -1,9 +1,10 @@
 import { Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import React from "react";
 
 function Welcome() {
   return (
-    <div className="bg-[#fcb900] pt-10 pb-20 mb-32 relative">
+    <div className="bg-[#fcb900] pt-10 pb-20 mb-36 relative">
       <article className="container text-center max-w-2xl">
         <Typography variant="h2">Welcome To Ujwal Dairy</Typography>
         <Typography className="text-lg leading-7 font-medium mt-4">
@@ -13,7 +14,7 @@ function Welcome() {
         </Typography>
       </article>
       <div className="absolute -bottom-24 left-0 w-full flex justify-center">
-        <img className="w-32" src="/logo.png" />
+        <Image width={128} height={153} src="/logo.png" />
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import React, { useState } from "react";
 import { paths } from "@/components/products/paths";
+import Image from "next/image";
 
 function Product({ product }) {
   const [img, setImg] = useState(product.imgSrc[0]);
@@ -15,8 +16,8 @@ function Product({ product }) {
       <div className="flex flex-col gap-5">
         <Card className="max-w-[500px]">
           <CardBody>
-            <div className="">
-              <img src={img} alt="Product images" className="h-full w-full " />
+            <div className="transition-all hover:scale-125 cursor-pointer">
+              <Image width={452} height={288} src={img} alt="Product images" />
             </div>
             <Typography variant="h5" className="text-center mt-5">
               {product.slogan}

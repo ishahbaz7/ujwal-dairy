@@ -80,14 +80,14 @@ function Product({ product }) {
 
 export default Product;
 
-// export const getStaticPaths = async () => {
-//   return {
-//     paths: paths,
-//     fallback: false,
-//   };
-// };
+export const getStaticPaths = async () => {
+  return {
+    paths: paths,
+    fallback: false,
+  };
+};
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context;
   const res = await fetch(
     `${process.env.API_URL}/api/products/${params.productName}`

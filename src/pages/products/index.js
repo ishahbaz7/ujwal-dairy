@@ -10,7 +10,7 @@ function Index({ productsData }) {
 
 export default Index;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await fetch(`${process.env.API_URL}/api/products`);
   var productsData = await data.json();
   console.log(process.env.API_URL);

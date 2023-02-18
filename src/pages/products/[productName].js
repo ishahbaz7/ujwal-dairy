@@ -27,15 +27,19 @@ function Product({ product }) {
         <div className="flex gap-5 max-w-sm ">
           {product.imgSrc.map((src) => {
             return (
-              <Avatar
-                onClick={() => setImg(src)}
+              <div
                 key={src}
                 className={`border cursor-pointer ${
                   img == src ? "border-orange-600" : ""
                 }`}
-                size="xl"
-                src={src}
-              />
+              >
+                <Image
+                  width={74}
+                  height={74}
+                  onClick={() => setImg(src)}
+                  src={src}
+                />
+              </div>
             );
           })}
         </div>
@@ -76,14 +80,14 @@ function Product({ product }) {
 
 export default Product;
 
-export const getStaticPaths = async () => {
-  return {
-    paths: paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths = async () => {
+//   return {
+//     paths: paths,
+//     fallback: false,
+//   };
+// };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { params } = context;
   const res = await fetch(
     `${process.env.API_URL}/api/products/${params.productName}`

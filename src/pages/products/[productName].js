@@ -1,10 +1,4 @@
-import {
-  Avatar,
-  Button,
-  Card,
-  CardBody,
-  Typography,
-} from "@material-tailwind/react";
+import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
 import React, { useState } from "react";
 import { paths } from "@/components/products/paths";
 import Image from "next/image";
@@ -99,7 +93,3 @@ export async function getStaticProps(context) {
     props: { product },
   };
 }
-
-Product.defaultProps = {
-  product: null,
-};

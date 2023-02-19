@@ -16,7 +16,3 @@ export async function getStaticProps() {
   console.log(process.env.API_URL);
   return { props: { productsData } };
 }
-
-Index.defaultProps = {
-  productsData: null,
-};

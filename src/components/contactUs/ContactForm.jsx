@@ -40,7 +40,18 @@ function ContactForm() {
     }
   };
   const handleSubmit = (e) => {
+    for (var key in form) {
+      if (!form[key]?.trim()) {
+        console.log(key, !!form[key]);
+        setError((prev) => ({
+          ...prev,
+          [key]: "This field is required",
+          email: "",
+        }));
+      }
+    }
     e.preventDefault();
+    // console.log(form);
   };
   return (
     <Card className="bg-[#ECECEC]">

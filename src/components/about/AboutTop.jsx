@@ -16,9 +16,9 @@ function AboutTop() {
               Established in 2001, Ujwal Dairy is a favourite among Khandeshkar
               for its delectable taste and quality. The Dairy was Established by
               our visionary founder Hon. Sudhakar Mahajan. It is precisely why
-              we have been the pride of Khandesh for four decades now. Delve
-              into the fascinating history, you&apos;ll find a wealth of
-              luscious range of Ujwal dairy products for your savouries.
+              we have been the pride of Khandesh for two decades now. Delve into
+              the fascinating history, you&apos;ll find a wealth of luscious
+              range of Ujwal dairy products for your savouries.
             </Typography>
             <Typography>
               Discover simple joys of healthy living wrapped in extravagance

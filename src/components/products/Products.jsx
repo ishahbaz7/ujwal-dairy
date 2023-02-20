@@ -6,11 +6,9 @@ import {
   Button,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Products({ products, take }) {
-  const router = useRouter();
-
   return (
     <div className="container mb-16">
       <Typography className="text-center text-2xl" variant="h1">
@@ -26,33 +24,31 @@ export default function Products({ products, take }) {
               key={val.title}
               className="w-96 mb-20 flex flex-col justify-between"
             >
-              <CardHeader
-                onClick={() => router.push(`/products/${val.link}`)}
-                color="orange"
-                className="relative hover:scale-110 transition-all  cursor-pointer"
-              >
-                <Image
-                  src={val.imgSrc}
-                  alt="Product Image"
-                  width={352}
-                  height={224}
-                />
-              </CardHeader>
+              <Link href={`/products/${val.link}`}>
+                {" "}
+                <CardHeader
+                  color="orange"
+                  className="relative hover:scale-110 transition-all  cursor-pointer"
+                >
+                  <Image
+                    src={val.imgSrc}
+                    alt="Product Image"
+                    width={352}
+                    height={224}
+                  />
+                </CardHeader>
+              </Link>
               <CardBody className="text-center ">
                 <Typography variant="h5" className="mb-2">
                   {val.title}
                 </Typography>
                 <Typography>{val.description}</Typography>
                 <div>
-                  <Button
-                    onClick={() => {
-                      router.push(`/products/${val.link}`);
-                    }}
-                    className="float-right mt-4"
-                    color="orange"
-                  >
-                    View details
-                  </Button>
+                  <Link href={`/products/${val.link}`}>
+                    <Button className="float-right mt-4" color="orange">
+                      View details
+                    </Button>
+                  </Link>
                 </div>
               </CardBody>
             </Card>
@@ -60,12 +56,9 @@ export default function Products({ products, take }) {
         })}
       </div>
       {take && (
-        <div
-          onClick={() => router.push("/products")}
-          className="flex -mt-8  justify-center"
-        >
+        <Link href={"/products"} className="flex -mt-8  justify-center">
           <Button color="orange">View all products</Button>
-        </div>
+        </Link>
       )}
     </div>
   );

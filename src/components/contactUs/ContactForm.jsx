@@ -128,8 +128,7 @@ function ContactForm() {
                   color="orange"
                   className="inline-block mr-2"
                 />
-                Mobile No:{" "}
-                <span className="font-normal">7755976676, 9146709185</span>
+                Mobile No: <span className="font-normal">7755976676</span>
               </Typography>
             </div>
             <a href="mailto:Ujwaldairy2001@gmail.com">
